@@ -151,7 +151,7 @@ class Aplicacion:
             self.guardar_datos_csv(nombre, apellido, edad, peso, altura, imc)
 
     def guardar_datos_csv(self, nombre, apellido, edad, peso, altura, imc):
-        with open('resultados_imc.csv', mode='a', newline='') as file:
+        with open('data/resultados_imc.csv', mode='a', newline='') as file:
             writer = csv.writer(file)
             writer.writerow([nombre, apellido, edad, peso, altura, imc])
 
