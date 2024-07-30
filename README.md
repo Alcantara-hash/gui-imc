@@ -35,3 +35,12 @@
 
 <h3>Despedida</h3>
 <p>Gracias por visitar el repositorio de este proyecto. Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto. ¡Happy Hacking!</p>
+
+
+<h3>Referencias</h3>
+<ul>
+  <li>https://www.flaticon.es/iconos-gratis/bmi</li>
+  <li>https://abarloventoinforma.com/wp-content/uploads/2021/07/IMSS.jpg</li>
+  <li>https://imssedomexpte.wordpress.com/wp-content/uploads/2021/04/cropped-cropped-cropped-imssfondo.png</li>
+  <li>https://play-lh.googleusercontent.com/xyM-31yucNN3NfiMxcuXCjmQAdyZOqxORyi7JrDdcmE4sxN8kMfuG8AhYIXnv2ky4A=w240-h480-rw</li>
+</ul>
