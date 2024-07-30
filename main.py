@@ -22,7 +22,7 @@ class Aplicacion:
         self.y = 550
         self.ventana.geometry(f"{self.x}x{self.y}")
 
-        icono = PhotoImage(file= resource_path('imc-1.png'))
+        icono = PhotoImage(file= resource_path('img/imc-1.png'))
         self.ventana.iconphoto(True, icono)
 
         # Colores verdosos intensos
@@ -45,7 +45,7 @@ class Aplicacion:
             widget.destroy()
 
         # Cargar imagen de fondo
-        imagen_fondo_path = resource_path("background.jpeg")
+        imagen_fondo_path = resource_path("img/background.jpeg")
         imagen_fondo = Image.open(imagen_fondo_path)
         imagen_fondo = imagen_fondo.resize((self.x, self.y))
         imagen_fondo = ImageTk.PhotoImage(imagen_fondo)
@@ -73,7 +73,7 @@ class Aplicacion:
         color_verde_texto = "black"
 
         # Cargar imagen de fondo
-        imagen_fondo_path = resource_path("banner.png")
+        imagen_fondo_path = resource_path("img/banner.png")
         imagen_fondo = Image.open(imagen_fondo_path)
         imagen_fondo = imagen_fondo.resize((self.x, self.y))
         imagen_fondo = ImageTk.PhotoImage(imagen_fondo)
@@ -113,7 +113,7 @@ class Aplicacion:
         self.entry_altura.pack()
 
         # Botón Calcular IMC con imagen
-        image_calcular_path = resource_path("imc.png")
+        image_calcular_path = resource_path("img/imc.png")
         image_calcular = tk.PhotoImage(file=image_calcular_path)
         image_calcular = image_calcular.subsample(12, 12)
 
