@@ -22,7 +22,6 @@
 <ul>
   <li><b>Error de Importación:</b>Se ha corregido un problema con la importación del módulo 'csv'.</li>
   <li><b>Manejo de Errores:</b>Se ha mejorado el manejo de errores al abrir el archivo CSV y en la conversión de datos ingresados.</li>
-  <li></li>
 </ul>
 
 <h3>Contribuciones</h3>
