@@ -34,7 +34,7 @@
 </ul>
 
 <h3>Despedida</h3>
-<p>Gracias por visitar el repositorio de este proyecto. Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto. ¡Happy Hacking!</p>
+<p>Gracias por visitar el repositorio de este proyecto. Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto.</p>
 
 
 <h3>Referencias</h3>
