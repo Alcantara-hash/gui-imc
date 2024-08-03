@@ -151,13 +151,31 @@ class Aplicacion:
             self.guardar_datos_csv(nombre, apellido, edad, peso, altura, imc)
 
     def guardar_datos_csv(self, nombre, apellido, edad, peso, altura, imc):
-        with open('data/resultados_imc.csv', mode='a', newline='') as file:
+        # Crear directorio si no existe
+        directory = 'data'
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        
+        file_path = os.path.join(directory, 'resultados_imc.csv')
+        file_exists = os.path.isfile(file_path)
+        
+        # Abrir el archivo CSV en modo append
+        with open(file_path, mode='a', newline='') as file:
             writer = csv.writer(file)
+            
+            # Escribir encabezado solo si el archivo no existía
+            if not file_exists:
+                writer.writerow(["Nombre", "Apellido", "Edad", "Peso (kg)", "Altura (m)", "IMC"])
+            
+            # Escribir los datos
             writer.writerow([nombre, apellido, edad, peso, altura, imc])
 
     def ver_archivo_csv(self):
+        file_path = os.path.join('data', 'resultados_imc.csv')
         try:
-            os.startfile('resultados_imc.csv')
+            os.startfile(file_path)
+        except FileNotFoundError:
+            self.label_resultado.config(text=f"Archivo CSV no encontrado: {file_path}", fg="red")
         except Exception as e:
             self.label_resultado.config(text=f"Error al abrir el archivo CSV: {str(e)}", fg="red")
 
